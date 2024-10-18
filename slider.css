@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out elements evenly */
+    background-color: white; /* White background for navbar */
+    padding: 10px 20px; /* Padding for comfort */
+    position: fixed;
+    width: 100%;
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.company-name {
+    font-size: 24px;
+    margin-right: 15px; /* Added space after company name */
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc; /* Border for the location box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 5px; /* Padding inside the box */
+    margin-right: 10px; /* Space between location and search bar */
+}
+
+.location-icon {
+    background: url('location-icon.png') no-repeat center center; /* Adjust URL as needed */
+    background-size: 20px; /* Size of the location icon */
+    width: 20px; /* Width of the icon */
+    height: 20px; /* Height of the icon */
+    margin-right: 5px; /* Space between icon and input */
+}
+
+.location-input {
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    padding: 5px; /* Padding for comfort */
+    font-size: 14px; /* Font size for location text */
+    color: #aaa; /* Dim color for placeholder */
+}
+
+/* Navbar links styling */
+.navbar-links {
+    display: flex; /* Arrange links horizontally */
+}
+
+.my-collection,
+.create-option,
+.login {
+    margin-left: 10px; /* Space between items */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+    padding: 10px; /* Padding for comfort */
+}
+
+/* Centered Search Bar in Navbar */
+.navbar-search {
+    flex: 1; /* Take up available space */
+    display: flex; /* Align search bar and icon */
+    justify-content: center; /* Center the search bar */
+    margin: 0 10px; /* Add horizontal space around the search bar */
+}
+
+.navbar-search-bar {
+    width: 400px; /* Enlarged width for the search bar */
+    padding: 10px; /* Padding for comfort */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Slider and images styling */
+.slider-container {
+    position: relative;
+    margin-top: 60px; /* Space below navbar */
+    margin-left: 100px; /* Leave space on the left for the section folder */
+    overflow: hidden;
+    height: 500px; /* Set the height as per your requirement */
+}
+
+/* Center the slider images */
+.slider-images {
+    display: flex;
+}
+
+.slider-images img {
+    width: 100%; /* Make the images fill the container */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 500px; /* Set a maximum height for the images */
+    display: none; /* Hide all images by default */
+    opacity: 0.8; /* Adjusted opacity to 0.8 for less transparency */
+    transition: opacity 0.3s ease; /* Shortened the transition time to 0.3s */
+}
+
+.slider-images img.active {
+    display: block; /* Show the active image */
+    opacity: 1; /* Fade in the image to full opacity */
+}
+
+/* Search bar in slider */
+.slider-search {
+    position: absolute; /* Position it inside the slider */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    display: flex;
+    align-items: center; /* Center the search bar vertically */
+}
+
+.slider-search-bar {
+    width: 400px; /* Increased width for slider search bar */
+    padding: 12px; /* Padding for comfort */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 10px; /* Rounded corners */
+    margin-right: 10px; /* Space for search icon */
+}
+
+/* Search favicon */
+.search-favicon {
+    background: url('search-icon.png') no-repeat 10px center; /* Adjust URL as needed */
+    background-size: 20px; /* Size of the search icon */
+    width: 30px; /* Width of the icon */
+    height: 30px; /* Height of the icon */
+    display: inline-block;
+}
+
+/* Placeholder text styling for search and location */
+.navbar-search-bar::placeholder,
+.slider-search-bar::placeholder,
+.location-input::placeholder {
+    color: #ddd; /* Dim greyish color for placeholder */
+    opacity: 1; /* Ensures the placeholder is visible */
+}

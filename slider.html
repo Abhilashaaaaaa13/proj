@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="slider.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+<div class="main"> <!-- Main div wrapping the navbar -->
+    <div class="navbar">
+        <div class="company-name">Your Company</div>
+
+        <div class="location">
+            <span class="location-icon"></span>
+            <input type="text" class="location-input" placeholder="LOCATION">
+        </div>
+
+        <div class="navbar-search">
+            <input type="text" class="navbar-search-bar" placeholder="Search for event, artist or destinations">
+            <span class="search-favicon"></span>
+        </div>
+
+        <div class="navbar-links">
+            <a href="#" class="my-collection">My Collection</a>
+            <a href="#" class="create-option">Create</a>
+            <a href="#" class="login">Log In</a>
+        </div>
+    </div>
+</div>
+
+<div class="slider-container">
+    <div class="slider-images" id="sliderImages">
+        <img src="concert.jpg" alt="Image 1" class="active">
+        <img src="starry-sky-van-gogh-oil-painting-abstract.jpg" alt="Image 2">
+        <img src="party.jpg" alt="Image 3">
+        <img src="sun.jpg" alt="Image 4">
+        <img src="stadium.jpg" alt="Image 5">
+        <img src="concert.jpg" alt="Image 6">
+    </div>
+    
+    <div class="slider-search">
+        <input type="text" class="slider-search-bar" placeholder="Search for event, artist or destinations">
+        <span class="search-favicon"></span>
+    </div>
+</div>
+
+<script src="slider.js"></script> <!-- Link to JS -->
+</body>
+</html>

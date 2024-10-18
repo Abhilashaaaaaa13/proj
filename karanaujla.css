@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Animated Radial Gradient Background */
+body {
+    background: radial-gradient(circle, rgba(255, 204, 0, 0.8), rgba(0, 191, 255, 0.8));
+    background-size: 400% 400%;
+    animation: radialGradientAnimation 15s ease infinite;
+}
+
+/* Animation for Radial Gradient Background */
+@keyframes radialGradientAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Floating musical shapes */
+.musical-note {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('musical-note.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.6;
+    animation: float 8s infinite ease-in-out;
+}
+
+.musical-note:nth-child(1) {
+    left: 10%;
+    top: 30%;
+    animation-duration: 6s;
+}
+
+.musical-note:nth-child(2) {
+    left: 50%;
+    top: 50%;
+    animation-duration: 8s;
+}
+
+.musical-note:nth-child(3) {
+    left: 80%;
+    top: 20%;
+    animation-duration: 5s;
+}
+
+/* Floating animation for musical notes */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+/* Animated Shapes */
+.shape {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 0, 150, 0.6);
+    border-radius: 20%;
+    animation: moveShape 10s infinite alternate;
+    opacity: 0.5;
+}
+
+.shape:nth-child(1) {
+    top: 20%;
+    left: 10%;
+    animation-duration: 6s;
+}
+
+.shape:nth-child(2) {
+    top: 70%;
+    right: 15%;
+    animation-duration: 8s;
+}
+
+.shape:nth-child(3) {
+    bottom: 10%;
+    left: 50%;
+    animation-duration: 7s;
+}
+
+/* Move Shapes Animation */
+@keyframes moveShape {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(40px, 40px); }
+}
+
+/* Wave Animation */
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('musical.jpg') repeat;
+    opacity: 0.1;
+    animation: waveAnimation 10s linear infinite;
+}
+
+/* Wave Animation */
+@keyframes waveAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.artist-name {
+    text-align: center;
+    font-size: 32px;
+    color: #d50000;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.artist-name:hover {
+    transform: scale(1.05);
+    color: #ff4081;
+}
+
+.artist-photo {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.artist-photo:hover {
+    transform: scale(1.05);
+}
+
+.info-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s ease;
+}
+
+.info-section:hover {
+    transform: translateY(-5px);
+    background-color: #f1f8e9;
+}
+
+h2 {
+    color: #d50000;
+}
+
+.ticket-info {
+    text-align: center;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+}
+
+.ticket-info h2 {
+    color: #00796b;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subtle Animation on Hover for Links */
+a {
+    text-decoration: none;
+    color: #1976d2;
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: #d50000;
+    transform: scale(1.1);
+}
